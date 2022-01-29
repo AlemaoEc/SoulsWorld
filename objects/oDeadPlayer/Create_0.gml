@@ -26,3 +26,4 @@ enum DEADPLAYERSTATE
 }
 
 alreadyAirAttacked = false;
+isResurrecting = false;

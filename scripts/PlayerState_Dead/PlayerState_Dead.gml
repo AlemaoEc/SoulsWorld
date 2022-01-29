@@ -12,7 +12,8 @@ function PlayerState_Dead() {
 
 	if (AnimationEnd()) image_speed = 0;
 
-	
+	global.lastAliveYPosition = y;
+	global.lastAliveXPosition = x;
 	global.alivePlayer = false;
 	//restartKey = keyboard_check(ord("R"));
 	//if (restartKey) state = PLAYERSTATE.REVIVE;

@@ -21,6 +21,5 @@ function DeadPlayerState_Revive(){
 
 	if (AnimationEnd()) {
 		state = DEADPLAYERSTATE.JUMP;
-		y += 200;
 	}
 }

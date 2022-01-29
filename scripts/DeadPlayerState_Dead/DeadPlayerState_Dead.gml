@@ -17,7 +17,10 @@ function DeadPlayerState_Dead() {
 	closeKey = keyboard_check(vk_escape);
 	if (closeKey) game_end();
 	
-	if (!global.alivePlayer) {
-		state = DEADPLAYERSTATE.REVIVE;
+	if (!global.alivePlayer && !isResurrecting) {
+		isResurrecting = true;
+		alarm[0] = room_speed * 2;
+		x = global.lastAliveXPosition;
+		y = (global.aliveWorldY - global.lastAliveYPosition) + global.underWorldY + 32;
 	}
 }
