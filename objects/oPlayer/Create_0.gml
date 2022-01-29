@@ -6,8 +6,9 @@ hsp = 0;
 vsp = 0;
 grv = 0.5;
 walksp = 8;
-jumpsp = 15;
+jumpsp = 17;
 hp = 2;
+hasKey = false;
 
 // Adding state machine
 state = PLAYERSTATE.JUMP;
@@ -25,3 +26,4 @@ enum PLAYERSTATE
 }
 
 alreadyAirAttacked = false;
+isResurrecting = false;

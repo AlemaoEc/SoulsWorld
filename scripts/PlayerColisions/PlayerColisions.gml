@@ -2,6 +2,50 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 // Horizontal collision
+function PlayerHorizontalCollisionPortal(){	
+	if (place_meeting(x+hsp,y,oPortal) and
+		oPortal.isClosed) {
+		while (!place_meeting(x+sign(hsp),y,oPortal)) {
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+}
+
+// Vertical collision
+function PlayerVerticalCollisionPortal(){
+	if (place_meeting(x,y+vsp,oPortal) and
+		oPortal.isClosed) {
+		while (!place_meeting(x,y+sign(vsp),oPortal)) {
+			y += sign(vsp);
+		}
+		vsp = 0;
+	}		
+}
+
+// Horizontal collision
+function DeadPlayerHorizontalCollisionPortal(){	
+	if (place_meeting(x+hsp,y,oPortal) and
+		oPortal.isClosed) {
+		while (!place_meeting(x+sign(hsp),y,oPortal)) {
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+}
+
+// Vertical collision
+function DeadPlayerVerticalCollisionPortal(){
+	if (place_meeting(x,y-vsp,oPortal) and
+		oPortal.isClosed) {
+		while (!place_meeting(x,y-sign(vsp),oPortal)) {
+			y -= sign(vsp);
+		}
+		vsp = 0;
+	}		
+}
+
+// Horizontal collision
 function PlayerHorizontalCollisionWall(){	
 	if (place_meeting(x+hsp,y,oWall))
 	{
@@ -23,6 +67,17 @@ function PlayerVerticalCollisionWall(){
 		}
 		vsp = 0;
 	}		
+}
+
+function DeadPlayerHorizontalCollisionWall(){	
+	if (place_meeting(x+hsp,y,oWall))
+	{
+		while (!place_meeting(x+sign(hsp),y,oWall))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
 }
 
 function DeadPlayerVerticalCollisionWall() {
@@ -67,16 +122,27 @@ function PlayerHorizontalCollisionEnemy(){
 	}
 }
 
-// Vertiacal collision with enemy
-function PlayerVertialCollisionEnemy() {
+// Vertical collision with enemy
+function PlayerVerticalCollisionEnemy() {
 	if (place_meeting(x,y+vsp,oEnemy))
 	{
 		vsp = -jumpsp/2;
 	}	
 }
 
-function DeadPlayerVertialCollisionEnemy() {
-	if (place_meeting(x,y-vsp,oEnemy))
+function DeadPlayerHorizontalCollisionEnemy(){
+	if (place_meeting(x+hsp,y,oUnderworldEnemy))
+	{
+		while (!place_meeting(x+sign(hsp),y,oUnderworldEnemy))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+}
+
+function DeadPlayerVerticalCollisionEnemy() {
+	if (place_meeting(x,y-vsp,oUnderworldEnemy))
 	{
 		vsp = -jumpsp/2;
 	}

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sInvisibleWall",
-    "path": "sprites/sInvisibleWall/sInvisibleWall.yy",
+    "name": "sInvisibleDamagedWall",
+    "path": "sprites/sInvisibleDamagedWall/sInvisibleDamagedWall.yy",
   },
   "solid": false,
   "visible": false,

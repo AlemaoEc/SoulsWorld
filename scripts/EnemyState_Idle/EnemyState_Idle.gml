@@ -4,5 +4,4 @@ function EnemyState_Idle() {
 
 	sprite_index = sEnemyIdle;
 
-
 }

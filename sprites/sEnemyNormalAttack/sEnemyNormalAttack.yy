@@ -88,7 +88,7 @@
     "eventStubScript": null,
     "parent": {"name":"sEnemyNormalAttack","path":"sprites/sEnemyNormalAttack/sEnemyNormalAttack.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sEnemyNormalAttack",
     "tags": [],
     "resourceType": "GMSequence",
   },

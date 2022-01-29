@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sEnemyPiercingAttack","path":"sprites/sEnemyPiercingAttack/sEnemyPiercingAttack.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sEnemyPiercingAttack",
     "tags": [],
     "resourceType": "GMSequence",
   },

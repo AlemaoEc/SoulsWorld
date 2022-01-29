@@ -12,7 +12,7 @@ function DeadPlayerState_Attack_Slash() {
 
 	if (AnimationEnd())
 	{
-		sprite_index = sPlayerIdle;
+		sprite_index = sDeadPlayerIdle;
 		state = DEADPLAYERSTATE.FREE;
 	}
 }

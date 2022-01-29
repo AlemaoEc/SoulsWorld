@@ -5,7 +5,21 @@ global.alivePlayer = true;
 global.aliveWorldY = 576;
 global.underWorldY = 1600;
 
-global.lastAliveYPosition = 0;
-global.lastAliveXPosition = 0
+global.lastAliveXPosition = 0;
+global.lastAliveYPosition = 0
+global.lastDeadXPosition = 0;
 global.lastDeadYPosition = 0;
-global.lastDeadYPosition = 0;
+
+global.leverIntereation = false;
+
+global.currentUnderworldEnemy = 0;
+
+state = GAMESTATE.ALIVEWORLDPLAYING;
+
+enum GAMESTATE
+{
+	ALIVEWORLDPLAYING,
+	UNDERWORLDPLAYING
+}
+
+spawnUnderWorld = false;
