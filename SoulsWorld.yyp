@@ -6,7 +6,6 @@
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":5,},
     {"id":{"name":"sAttackSlash","path":"sprites/sAttackSlash/sAttackSlash.yy",},"order":7,},
     {"id":{"name":"sAttackSlashHB","path":"sprites/sAttackSlashHB/sAttackSlashHB.yy",},"order":9,},
-    {"id":{"name":"DeadPlayerState_DoubleJump","path":"scripts/DeadPlayerState_DoubleJump/DeadPlayerState_DoubleJump.yy",},"order":7,},
     {"id":{"name":"sPlayerAttackCombo","path":"sprites/sPlayerAttackCombo/sPlayerAttackCombo.yy",},"order":11,},
     {"id":{"name":"sPlayerAttackComboHB","path":"sprites/sPlayerAttackComboHB/sPlayerAttackComboHB.yy",},"order":13,},
     {"id":{"name":"sPlayerAirAttack","path":"sprites/sPlayerAirAttack/sPlayerAirAttack.yy",},"order":15,},

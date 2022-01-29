@@ -2,11 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function DeadPlayerState_Jump(){
 	//Jump
-	show_debug_message("Pulo dead")
 	vsp += grv;
-	if(place_meeting(x,y-1,oWall))
-	{
+	show_debug_message("Jumps");
+	show_debug_message(jumps);
+	
+	if(jumps > 0) {
 		vsp = -jumpsp;
+		jumps -= 1;
 	}
 	
 	DeadPlayerVerticalCollisionWall();
