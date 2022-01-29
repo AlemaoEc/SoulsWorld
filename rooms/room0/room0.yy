@@ -54,7 +54,6 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_7D0663CD","path":"rooms/room0/room0.yy",},
     {"name":"inst_147726A4","path":"rooms/room0/room0.yy",},
     {"name":"inst_21C3394","path":"rooms/room0/room0.yy",},
     {"name":"inst_783AFAFB","path":"rooms/room0/room0.yy",},

@@ -5,7 +5,7 @@ function PlayerState_Attack_Slash() {
 	PlayerProcessAttack(sAttackSlash, sAttackSlashHB);
 
 	// Trigger combo chain
-	if (keyAttack) && (image_index > 2)
+	if (key_attack) && (image_index > 2)
 	{
 		state = PLAYERSTATE.ATTACK_COMBO;
 	}
