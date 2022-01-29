@@ -12,7 +12,8 @@ function PlayerState_Air_Attack() {
 
 	vsp += grv*2;
 	PlayerVerticalCollisionWall();
-	PlayerVertialCollisionEnemy();
+	PlayerVerticalCollisionEnemy();
+	PlayerVerticalCollisionPortal();
 	y += vsp;
 
 	if (AnimationEnd())

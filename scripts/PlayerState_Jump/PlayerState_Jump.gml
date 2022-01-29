@@ -7,7 +7,7 @@ function PlayerState_Jump(){
 	{
 		vsp = -jumpsp;
 	}
-	
+	PlayerVerticalCollisionPortal();
 	PlayerVerticalCollisionWall();
 	PlayerVerticalCollisionEnemy();
 	y += vsp;

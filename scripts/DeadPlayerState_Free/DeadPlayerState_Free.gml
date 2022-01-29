@@ -3,6 +3,7 @@ function DeadPlayerState_Free() {
 	var _move = key_right - key_left;
 	hsp = _move * walksp;
 	
+	DeadPlayerHorizontalCollisionPortal();
 	DeadPlayerHorizontalCollisionWall();
 	DeadPlayerHorizontalCollisionEnemy();
 	x += hsp;
