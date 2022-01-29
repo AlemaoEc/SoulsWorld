@@ -50,6 +50,7 @@
     {"id":{"name":"PlayerState_Air_Attack","path":"scripts/PlayerState_Air_Attack/PlayerState_Air_Attack.yy",},"order":1,},
     {"id":{"name":"oDeadPlayer","path":"objects/oDeadPlayer/oDeadPlayer.yy",},"order":8,},
     {"id":{"name":"sDeadPlayerHB","path":"sprites/sDeadPlayerHB/sDeadPlayerHB.yy",},"order":1,},
+    {"id":{"name":"sInvisibleDamagedWall","path":"sprites/sInvisibleDamagedWall/sInvisibleDamagedWall.yy",},"order":10,},
     {"id":{"name":"PlayerState_Free","path":"scripts/PlayerState_Free/PlayerState_Free.yy",},"order":3,},
     {"id":{"name":"PlayerState_Attack_Slash","path":"scripts/PlayerState_Attack_Slash/PlayerState_Attack_Slash.yy",},"order":5,},
     {"id":{"name":"sDeadPlayerAttackSlash","path":"sprites/sDeadPlayerAttackSlash/sDeadPlayerAttackSlash.yy",},"order":0,},
