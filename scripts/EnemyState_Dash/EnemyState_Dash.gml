@@ -22,6 +22,4 @@ function EnemyState_Dash() {
 		canDashAttack = false;
 		state = ENEMYSTATE.WALKING;
 	}
-
-
 }

@@ -18,6 +18,6 @@ function PlayerState_Air_Attack() {
 	if (AnimationEnd())
 	{
 		alreadyAirAttacked = true;
-		state = PLAYERSTATE.FREE;
+		state = PLAYERSTATE.JUMP;
 	}
 }

@@ -6,7 +6,7 @@
     "path": "folders/Scripts/DeadPlayerScripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "DeadPlayerState_DoubleJump",
+  "name": "DeadPlayerState_Revive",
   "tags": [],
   "resourceType": "GMScript",
 }
