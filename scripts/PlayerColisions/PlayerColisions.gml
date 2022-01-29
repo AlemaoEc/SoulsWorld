@@ -25,6 +25,16 @@ function PlayerVerticalCollisionWall(){
 	}
 }
 
+// Vertical collision
+function PlayerVerticalCollisionFloorDamage(){
+	if (place_meeting(x,y+vsp,oFloorDamage))
+	{
+		vsp = -jumpsp/2;
+		return true;
+	}
+	return false;
+}
+
 // Horizontal collision with enemy
 function PlayerHorizontalCollisionEnemy(){
 	if (place_meeting(x+hsp,y,oEnemy))

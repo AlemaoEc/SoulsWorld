@@ -10,6 +10,7 @@
     {"id":{"name":"sPlayerAirAttack","path":"sprites/sPlayerAirAttack/sPlayerAirAttack.yy",},"order":15,},
     {"id":{"name":"sPlayerAirAttackHB","path":"sprites/sPlayerAirAttackHB/sPlayerAirAttackHB.yy",},"order":17,},
     {"id":{"name":"sPlayerDead","path":"sprites/sPlayerDead/sPlayerDead.yy",},"order":19,},
+    {"id":{"name":"oFloorDamage","path":"objects/oFloorDamage/oFloorDamage.yy",},"order":8,},
     {"id":{"name":"sInvisibleWall","path":"sprites/sInvisibleWall/sInvisibleWall.yy",},"order":1,},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},"order":3,},
     {"id":{"name":"sWalls","path":"sprites/sWalls/sWalls.yy",},"order":5,},

@@ -22,6 +22,10 @@ function PlayerState_Free() {
 	}
 
 	if (hsp != 0) image_xscale = sign(hsp);
+	
+	if (PlayerVerticalCollisionFloorDamage()) {
+		PlayerHit(1);
+	}
 
 	if (key_attack && sprite_index != sPlayerAir) state = PLAYERSTATE.ATTACK_SLASH;
 	if (key_attack && sprite_index == sPlayerAir && !alreadyAirAttacked) state = PLAYERSTATE.AIR_ATTACK;
