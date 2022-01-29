@@ -9,7 +9,7 @@ function PlayerState_Jump(){
 	}
 	
 	PlayerVerticalCollisionWall();
-	PlayerVertialCollisionEnemy();
+	PlayerVerticalCollisionEnemy();
 	y += vsp;
 	
 	if(place_meeting(x,y+1,oWall)) state = PLAYERSTATE.FREE;

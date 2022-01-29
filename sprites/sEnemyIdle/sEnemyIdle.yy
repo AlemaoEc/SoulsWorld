@@ -120,7 +120,7 @@
     "eventStubScript": null,
     "parent": {"name":"sEnemyIdle","path":"sprites/sEnemyIdle/sEnemyIdle.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sEnemyIdle",
     "tags": [],
     "resourceType": "GMSequence",
   },

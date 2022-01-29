@@ -9,7 +9,7 @@ function DeadPlayerState_Air_Attack() {
 
 	vsp += grv*2;
 	
-	PlayerHorizontalCollisionWall();
+	DeadPlayerHorizontalCollisionWall();
 	x += hsp;
 
 	DeadPlayerVerticalCollisionWall();

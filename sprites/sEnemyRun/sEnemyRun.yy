@@ -120,7 +120,7 @@
     "eventStubScript": null,
     "parent": {"name":"sEnemyRun","path":"sprites/sEnemyRun/sEnemyRun.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sEnemyRun",
     "tags": [],
     "resourceType": "GMSequence",
   },

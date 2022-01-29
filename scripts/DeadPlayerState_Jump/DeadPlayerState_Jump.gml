@@ -13,7 +13,7 @@ function DeadPlayerState_Jump(){
 	}
 	
 	DeadPlayerVerticalCollisionWall();
-	DeadPlayerVertialCollisionEnemy();
+	DeadPlayerVerticalCollisionEnemy();
 	y -= vsp;
 	
 	if(place_meeting(x,y-1,oWall)){

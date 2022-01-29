@@ -2,7 +2,7 @@ function DeadPlayerState_Dead() {
 	grv = 0.5;
 	vsp += grv;
 	
-	PlayerVerticalCollisionWall()
+	DeadPlayerVerticalCollisionWall()
 	y -= vsp;
 
 	mask_index = sDeadPlayerDead;

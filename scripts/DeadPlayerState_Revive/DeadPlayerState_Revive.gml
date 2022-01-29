@@ -7,7 +7,7 @@ function DeadPlayerState_Revive(){
 	// Vertical collision with wall
 	if (place_meeting(x,y-vsp,oWall))
 	{
-		while (!place_meeting(x,y+sign(vsp),oWall))
+		while (!place_meeting(x,y-sign(vsp),oWall))
 		{
 			y -= sign(vsp);
 		}
@@ -20,6 +20,11 @@ function DeadPlayerState_Revive(){
 	image_speed = 1;
 
 	if (AnimationEnd()) {
+		//avoinding player to enter the floor
+		y += 50;
+		
 		state = DEADPLAYERSTATE.JUMP;
+		
+		instance_create_layer(1248, 1600, "Instances", oUnderworldEnemy);
 	}
 }

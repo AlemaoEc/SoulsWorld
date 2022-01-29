@@ -19,7 +19,8 @@ function EnemyState_Dash() {
 	if (AnimationEnd())
 	{
 		alarm[0] = room_speed * 5;
+		alarm[1] = room_speed * 1;
 		canDashAttack = false;
-		state = ENEMYSTATE.WALKING;
+		state = ENEMYSTATE.IDLE;
 	}
 }

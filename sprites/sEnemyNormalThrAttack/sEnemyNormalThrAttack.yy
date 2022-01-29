@@ -120,7 +120,7 @@
     "eventStubScript": null,
     "parent": {"name":"sEnemyNormalThrAttack","path":"sprites/sEnemyNormalThrAttack/sEnemyNormalThrAttack.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sEnemyNormalThrAttack",
     "tags": [],
     "resourceType": "GMSequence",
   },
