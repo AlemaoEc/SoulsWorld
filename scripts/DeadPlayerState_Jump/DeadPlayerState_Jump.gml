@@ -12,6 +12,7 @@ function DeadPlayerState_Jump(){
 		jumps -= 1;
 	}
 	
+	DeadPlayerVerticalCollisionPortal();
 	DeadPlayerVerticalCollisionWall();
 	DeadPlayerVerticalCollisionEnemy();
 	y -= vsp;

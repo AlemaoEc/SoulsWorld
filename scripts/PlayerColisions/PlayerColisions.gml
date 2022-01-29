@@ -2,6 +2,50 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 // Horizontal collision
+function PlayerHorizontalCollisionPortal(){	
+	if (place_meeting(x+hsp,y,oPortal) and
+		oPortal.isClosed) {
+		while (!place_meeting(x+sign(hsp),y,oPortal)) {
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+}
+
+// Vertical collision
+function PlayerVerticalCollisionPortal(){
+	if (place_meeting(x,y+vsp,oPortal) and
+		oPortal.isClosed) {
+		while (!place_meeting(x,y+sign(vsp),oPortal)) {
+			y += sign(vsp);
+		}
+		vsp = 0;
+	}		
+}
+
+// Horizontal collision
+function DeadPlayerHorizontalCollisionPortal(){	
+	if (place_meeting(x+hsp,y,oPortal) and
+		oPortal.isClosed) {
+		while (!place_meeting(x+sign(hsp),y,oPortal)) {
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+}
+
+// Vertical collision
+function DeadPlayerVerticalCollisionPortal(){
+	if (place_meeting(x,y-vsp,oPortal) and
+		oPortal.isClosed) {
+		while (!place_meeting(x,y-sign(vsp),oPortal)) {
+			y -= sign(vsp);
+		}
+		vsp = 0;
+	}		
+}
+
+// Horizontal collision
 function PlayerHorizontalCollisionWall(){	
 	if (place_meeting(x+hsp,y,oWall))
 	{

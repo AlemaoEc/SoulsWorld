@@ -2,7 +2,8 @@ function PlayerState_Free() {
 	// Calculate movement
 	var _move = key_right - key_left;
 	hsp = _move * walksp;
-
+	
+	PlayerHorizontalCollisionPortal();
 	PlayerHorizontalCollisionWall();
 	PlayerHorizontalCollisionEnemy();
 	x += hsp;
