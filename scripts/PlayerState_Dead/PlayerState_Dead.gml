@@ -24,6 +24,4 @@ function PlayerState_Dead() {
 
 	closeKey = keyboard_check(vk_escape);
 	if (closeKey) game_end();
-
-
 }

@@ -36,6 +36,4 @@ function PlayerState_Air_Attack() {
 		alreadyAirAttacked = true;
 		state = PLAYERSTATE.FREE;
 	}
-
-
 }

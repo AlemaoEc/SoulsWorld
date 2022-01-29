@@ -7,8 +7,6 @@ vsp = 0;
 grv = 0.5;
 walksp = 8;
 jumpsp = 15;
-timeStoped = false;
-canTimeStop = true;
 hp = 2;
 
 // Adding state machine

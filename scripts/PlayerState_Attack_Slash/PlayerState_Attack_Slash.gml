@@ -15,6 +15,4 @@ function PlayerState_Attack_Slash() {
 		sprite_index = sPlayerIdle;
 		state = PLAYERSTATE.FREE;
 	}
-
-
 }
