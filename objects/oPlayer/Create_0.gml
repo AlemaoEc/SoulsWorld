@@ -10,12 +10,14 @@ jumpsp = 15;
 hp = 2;
 
 // Adding state machine
-state = PLAYERSTATE.FREE;
+state = PLAYERSTATE.JUMP;
 hitByAttack = ds_list_create();
 
 enum PLAYERSTATE
 {
 	FREE,
+	JUMP,
+	DOUBLE_JUMP,
 	ATTACK_SLASH,
 	ATTACK_COMBO,
 	AIR_ATTACK,
