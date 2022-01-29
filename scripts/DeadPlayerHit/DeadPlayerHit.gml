@@ -3,7 +3,6 @@ function DeadPlayerHit(damage) {
 
 	hp -= damage;
 
-
 	if (hp <= 0) state = DEADPLAYERSTATE.DEAD;
 	else 
 	{

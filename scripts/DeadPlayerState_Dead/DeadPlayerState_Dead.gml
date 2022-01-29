@@ -2,16 +2,8 @@ function DeadPlayerState_Dead() {
 	grv = 0.5;
 	vsp += grv;
 	
-	// Vertical collision with wall
-	if (place_meeting(x,y+vsp,oWall))
-	{
-		while (!place_meeting(x,y+sign(vsp),oWall))
-		{
-			y += sign(vsp);
-		}
-		vsp = 0;
-	}
-	y += vsp;
+	PlayerVerticalCollisionWall()
+	y -= vsp;
 
 	mask_index = sDeadPlayerDead;
 	sprite_index = sDeadPlayerDead;

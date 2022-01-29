@@ -22,6 +22,20 @@ function PlayerVerticalCollisionWall(){
 			y += sign(vsp);
 		}
 		vsp = 0;
+	}		
+}
+
+function DeadPlayerVerticalCollisionWall() {
+	show_debug_message("DeadPlayerVerticalCollisionWall");
+	if (place_meeting(x,y-vsp,oWall))
+	{
+		show_debug_message("place_meeting(x,y-vsp,oWall)");
+		while (!place_meeting(x,y-sign(vsp),oWall))
+		{
+			show_debug_message("alterando Y");
+			y -= sign(vsp);
+		}
+		vsp = 0;
 	}
 }
 
@@ -32,7 +46,16 @@ function PlayerVerticalCollisionFloorDamage(){
 		vsp = -jumpsp/2;
 		return true;
 	}
-	return false;
+	return false;	
+}
+
+function DeadPlayerVerticalCollisionFloorDamage(){
+	if (place_meeting(x,y-vsp,oFloorDamage))
+	{
+		vsp = -jumpsp/2;
+		return true;
+	}
+	return false;	
 }
 
 // Horizontal collision with enemy
@@ -50,6 +73,13 @@ function PlayerHorizontalCollisionEnemy(){
 // Vertiacal collision with enemy
 function PlayerVertialCollisionEnemy() {
 	if (place_meeting(x,y+vsp,oEnemy))
+	{
+		vsp = -jumpsp/2;
+	}	
+}
+
+function DeadPlayerVertialCollisionEnemy() {
+	if (place_meeting(x,y-vsp,oEnemy))
 	{
 		vsp = -jumpsp/2;
 	}

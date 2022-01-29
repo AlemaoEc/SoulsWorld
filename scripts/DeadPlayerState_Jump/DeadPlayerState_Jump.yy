@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "PlayerScripts",
-    "path": "folders/Scripts/PlayerScripts.yy",
+    "name": "DeadPlayerScripts",
+    "path": "folders/Scripts/DeadPlayerScripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "PlayerState_DoubleJump",
+  "name": "DeadPlayerState_Jump",
   "tags": [],
   "resourceType": "GMScript",
 }

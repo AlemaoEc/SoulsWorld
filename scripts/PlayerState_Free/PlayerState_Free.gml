@@ -1,6 +1,4 @@
 function PlayerState_Free() {
-	show_debug_message("Y player");
-	show_debug_message(y);
 	// Calculate movement
 	var _move = key_right - key_left;
 	hsp = _move * walksp;
@@ -32,10 +30,6 @@ function PlayerState_Free() {
 	if (key_attack && sprite_index != sPlayerAir) state = PLAYERSTATE.ATTACK_SLASH;
 	if (key_attack && sprite_index == sPlayerAir && !alreadyAirAttacked) state = PLAYERSTATE.AIR_ATTACK;
 	if (key_jump){
-		show_debug_message("Entrei JUMP");
 		state = PLAYERSTATE.JUMP;
 	} 
-	if (key_jump && state == PLAYERSTATE.JUMP) {
-		state = PLAYERSTATE.DOUBLE_JUMP;
-	}
 }
