@@ -120,7 +120,7 @@
     "eventStubScript": null,
     "parent": {"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sPlayerIdle",
     "tags": [],
     "resourceType": "GMSequence",
   },
