@@ -7,7 +7,7 @@ vsp = 0;
 grv = 0.5;
 walksp = 8;
 jumpsp = 17;
-hp = 2;
+hp = 500;
 
 // Adding state machine
 state = PLAYERSTATE.JUMP;

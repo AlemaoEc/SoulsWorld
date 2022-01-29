@@ -24,6 +24,10 @@ function DeadPlayerState_Free() {
 	}
 
 	if (hsp != 0) image_xscale = sign(hsp);
+	
+	if (DeadPlayerVerticalCollisionFloorDamage()) {
+		DeadPlayerHit(1);
+	}
 
 	if (keyAttack and sprite_index != sDeadPlayerAir) state = DEADPLAYERSTATE.ATTACK_SLASH;
 	if (keyAttack and sprite_index == sDeadPlayerAir && !alreadyAirAttacked) state = DEADPLAYERSTATE.AIR_ATTACK;
