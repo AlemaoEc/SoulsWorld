@@ -6,13 +6,13 @@ function PlayerState_Air_Attack() {
 	var _move = key_right - key_left;
 
 	hsp = _move * walksp/2;
-
-	vsp += grv*2;
 	
 	PlayerHorizontalCollisionWall();
 	x += hsp;
 
+	vsp += grv*2;
 	PlayerVerticalCollisionWall();
+	PlayerVertialCollisionEnemy();
 	y += vsp;
 
 	if (AnimationEnd())

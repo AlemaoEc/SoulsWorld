@@ -64,6 +64,7 @@
     {"id":{"name":"PlayerState_Air_Attack","path":"scripts/PlayerState_Air_Attack/PlayerState_Air_Attack.yy",},"order":1,},
     {"id":{"name":"oDeadPlayer","path":"objects/oDeadPlayer/oDeadPlayer.yy",},"order":8,},
     {"id":{"name":"sDeadPlayerHB","path":"sprites/sDeadPlayerHB/sDeadPlayerHB.yy",},"order":1,},
+    {"id":{"name":"sInvisibleDamagedWall","path":"sprites/sInvisibleDamagedWall/sInvisibleDamagedWall.yy",},"order":10,},
     {"id":{"name":"PlayerState_Free","path":"scripts/PlayerState_Free/PlayerState_Free.yy",},"order":3,},
     {"id":{"name":"GameState_UnderWorldPlaying","path":"scripts/GameState_UnderWorldPlaying/GameState_UnderWorldPlaying.yy",},"order":1,},
     {"id":{"name":"UnderworldEnemyState_SecondaryAttack","path":"scripts/UnderworldEnemyState_SecondaryAttack/UnderworldEnemyState_SecondaryAttack.yy",},"order":7,},

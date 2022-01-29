@@ -6,13 +6,14 @@ function PlayerState_Free() {
 	PlayerHorizontalCollisionWall();
 	PlayerHorizontalCollisionEnemy();
 	x += hsp;
-
+	
 	// Animation
 	if (!place_meeting(x,y+1,oWall))
 	{
 		sprite_index = sPlayerAir;
 		image_speed = 0;
 		image_index = (vsp > 0)? 1 : 0;
+		state = PLAYERSTATE.JUMP;
 	}
 	else
 	{
