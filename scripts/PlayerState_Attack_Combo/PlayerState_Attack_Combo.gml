@@ -5,7 +5,7 @@ function PlayerState_Attack_Combo() {
 	PlayerProcessAttack(sPlayerAttackCombo, sPlayerAttackComboHB);
 
 	// Trigger combo chain
-	if (keyAttack) && (image_index > 2)
+	if (key_attack) && (image_index > 2)
 	{
 		state = PLAYERSTATE.ATTACK_SLASH;
 	}
@@ -15,6 +15,4 @@ function PlayerState_Attack_Combo() {
 		sprite_index = sPlayerIdle;
 		state = PLAYERSTATE.FREE;
 	}
-
-
 }

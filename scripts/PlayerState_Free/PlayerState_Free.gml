@@ -1,53 +1,13 @@
 function PlayerState_Free() {
+	show_debug_message("Y player");
+	show_debug_message(y);
 	// Calculate movement
 	var _move = key_right - key_left;
-
 	hsp = _move * walksp;
 
-	vsp += grv;
-
-	if(place_meeting(x,y+1,oWall)) and (key_jump)
-	{
-		vsp = -jumpsp;
-	}
-
-	// Horizontal collision with wall
-	if (place_meeting(x+hsp,y,oWall))
-	{
-		while (!place_meeting(x+sign(hsp),y,oWall))
-		{
-			x += sign(hsp);
-		}
-		hsp = 0;
-	}
-	// Horizontal collision with enemy
-	if (place_meeting(x+hsp,y,oEnemy))
-	{
-		while (!place_meeting(x+sign(hsp),y,oEnemy))
-		{
-			x += sign(hsp);
-		}
-		hsp = 0;
-	}
-
+	PlayerHorizontalCollisionWall();
+	PlayerHorizontalCollisionEnemy();
 	x += hsp;
-
-	// Vertical collision with wall
-	if (place_meeting(x,y+vsp,oWall))
-	{
-		while (!place_meeting(x,y+sign(vsp),oWall))
-		{
-			y += sign(vsp);
-		}
-		vsp = 0;
-	}
-	// Vertical collision with enemy
-	if (place_meeting(x,y+vsp,oEnemy))
-	{
-		vsp = -jumpsp/2;
-	}
-
-	y += vsp;
 
 	// Animation
 	if (!place_meeting(x,y+1,oWall))
@@ -64,18 +24,18 @@ function PlayerState_Free() {
 	}
 
 	if (hsp != 0) image_xscale = sign(hsp);
-
-	if (keyAttack && sprite_index != sPlayerAir) state = PLAYERSTATE.ATTACK_SLASH;
-	if (keyAttack && sprite_index == sPlayerAir && !alreadyAirAttacked) state = PLAYERSTATE.AIR_ATTACK;
-
-	//Check time stop pressed
-	if (keyTimeStop && canTimeStop && state != PLAYERSTATE.DEAD)
-	{
-		canTimeStop = false;
-		timeStoped = true;
-		alarm[0] = room_speed * 1;
-		alarm[1] = room_speed * 3;
+	
+	if (PlayerVerticalCollisionFloorDamage()) {
+		PlayerHit(1);
 	}
 
-
+	if (key_attack && sprite_index != sPlayerAir) state = PLAYERSTATE.ATTACK_SLASH;
+	if (key_attack && sprite_index == sPlayerAir && !alreadyAirAttacked) state = PLAYERSTATE.AIR_ATTACK;
+	if (key_jump){
+		show_debug_message("Entrei JUMP");
+		state = PLAYERSTATE.JUMP;
+	} 
+	if (key_jump && state == PLAYERSTATE.JUMP) {
+		state = PLAYERSTATE.DOUBLE_JUMP;
+	}
 }

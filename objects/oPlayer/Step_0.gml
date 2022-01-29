@@ -4,13 +4,18 @@
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D")); ;
 key_jump = keyboard_check_pressed(vk_space);
-keyAttack = keyboard_check_pressed(ord("H")) || keyboard_check_pressed(ord("Z")); 
-keyTimeStop = keyboard_check_pressed(ord("X"))
+key_attack = keyboard_check_pressed(ord("H")) || keyboard_check_pressed(ord("Z")); 
 
 switch (state)
 {
 	case PLAYERSTATE.FREE: 
 		PlayerState_Free();
+		break;
+	case PLAYERSTATE.JUMP: 
+		PlayerState_Jump();
+		break;
+	case PLAYERSTATE.DOUBLE_JUMP: 
+		PlayerState_DoubleJump();
 		break;
 	case PLAYERSTATE.ATTACK_SLASH:
 		PlayerState_Attack_Slash();
@@ -23,5 +28,8 @@ switch (state)
 		break;
 	case PLAYERSTATE.DEAD:
 		PlayerState_Dead();
+		break;
+	case PLAYERSTATE.REVIVE:
+		PlayerState_Revive();
 		break;
 }
