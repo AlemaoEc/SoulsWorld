@@ -120,7 +120,7 @@
     "eventStubScript": null,
     "parent": {"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sPlayerRun",
     "tags": [],
     "resourceType": "GMSequence",
   },

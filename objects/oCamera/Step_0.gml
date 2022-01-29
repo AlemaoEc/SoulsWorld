@@ -1,4 +1,11 @@
 /// @description Update camera
+show_debug_message(global.alivePlayer)
+if (global.alivePlayer) {
+	if (follow != oPlayer) follow = oPlayer;
+} else {
+	show_debug_message("entrei aqui")
+	follow = oDeadPlayer
+}
 
 // Update destination
 if (instance_exists(follow))
