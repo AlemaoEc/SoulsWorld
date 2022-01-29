@@ -14,7 +14,7 @@ function UnderworldEnemyState_Dead() {
 	mask_index = sUnderworldEnemyDead;
 	sprite_index = sUnderworldEnemyDead;
 	
-	if (AnimationEnd()) image_speed = 0;
-
-
+	if (AnimationEnd()) {
+		image_speed = 0;
+	} 
 }

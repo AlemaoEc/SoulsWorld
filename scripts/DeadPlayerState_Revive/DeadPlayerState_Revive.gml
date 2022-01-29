@@ -24,7 +24,5 @@ function DeadPlayerState_Revive(){
 		y += 50;
 		
 		state = DEADPLAYERSTATE.JUMP;
-		
-		instance_create_layer(1248, 1600, "Instances", oUnderworldEnemy);
 	}
 }

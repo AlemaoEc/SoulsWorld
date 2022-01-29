@@ -25,3 +25,4 @@ enum PLAYERSTATE
 }
 
 alreadyAirAttacked = false;
+isResurrecting = false;

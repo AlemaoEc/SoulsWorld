@@ -19,7 +19,7 @@ function UnderworldEnemyState_Dash() {
 	if (AnimationEnd())
 	{
 		alarm[0] = room_speed * 5;
-		alarm[1] = room_speed * 1;
+		alarm[1] = room_speed * 5;
 		canDashAttack = false;
 		state = UNDERWORLDENEMYSTATE.IDLE;
 	}

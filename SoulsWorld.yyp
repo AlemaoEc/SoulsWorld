@@ -19,6 +19,7 @@
     {"id":{"name":"sDeadPlayerAirAttack","path":"sprites/sDeadPlayerAirAttack/sDeadPlayerAirAttack.yy",},"order":3,},
     {"id":{"name":"sDeadPlayerRevive","path":"sprites/sDeadPlayerRevive/sDeadPlayerRevive.yy",},"order":11,},
     {"id":{"name":"DeadPlayerState_Attack_Combo","path":"scripts/DeadPlayerState_Attack_Combo/DeadPlayerState_Attack_Combo.yy",},"order":3,},
+    {"id":{"name":"GameState_AliveWorldPlaying","path":"scripts/GameState_AliveWorldPlaying/GameState_AliveWorldPlaying.yy",},"order":0,},
     {"id":{"name":"PlayerColisions","path":"scripts/PlayerColisions/PlayerColisions.yy",},"order":4,},
     {"id":{"name":"sPlayerDead","path":"sprites/sPlayerDead/sPlayerDead.yy",},"order":19,},
     {"id":{"name":"oFloorDamage","path":"objects/oFloorDamage/oFloorDamage.yy",},"order":8,},
@@ -64,6 +65,7 @@
     {"id":{"name":"oDeadPlayer","path":"objects/oDeadPlayer/oDeadPlayer.yy",},"order":8,},
     {"id":{"name":"sDeadPlayerHB","path":"sprites/sDeadPlayerHB/sDeadPlayerHB.yy",},"order":1,},
     {"id":{"name":"PlayerState_Free","path":"scripts/PlayerState_Free/PlayerState_Free.yy",},"order":3,},
+    {"id":{"name":"GameState_UnderWorldPlaying","path":"scripts/GameState_UnderWorldPlaying/GameState_UnderWorldPlaying.yy",},"order":1,},
     {"id":{"name":"UnderworldEnemyState_SecondaryAttack","path":"scripts/UnderworldEnemyState_SecondaryAttack/UnderworldEnemyState_SecondaryAttack.yy",},"order":7,},
     {"id":{"name":"PlayerState_Attack_Slash","path":"scripts/PlayerState_Attack_Slash/PlayerState_Attack_Slash.yy",},"order":5,},
     {"id":{"name":"sDeadPlayerAttackSlash","path":"sprites/sDeadPlayerAttackSlash/sDeadPlayerAttackSlash.yy",},"order":0,},
@@ -140,6 +142,7 @@
     {"folderPath":"folders/Scripts/DeadPlayerScripts.yy","order":3,"resourceVersion":"1.0","name":"DeadPlayerScripts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/UnderworldEnemy.yy","order":16,"resourceVersion":"1.0","name":"UnderworldEnemy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/UnderworldEnemy.yy","order":14,"resourceVersion":"1.0","name":"UnderworldEnemy","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/GameStateScripts.yy","order":15,"resourceVersion":"1.0","name":"GameStateScripts","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
