@@ -25,6 +25,17 @@ function PlayerVerticalCollisionWall(){
 	}		
 }
 
+function DeadPlayerHorizontalCollisionWall(){	
+	if (place_meeting(x+hsp,y,oWall))
+	{
+		while (!place_meeting(x+sign(hsp),y,oWall))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+}
+
 function DeadPlayerVerticalCollisionWall() {
 	if (place_meeting(x,y-vsp,oWall))
 	{
@@ -67,16 +78,27 @@ function PlayerHorizontalCollisionEnemy(){
 	}
 }
 
-// Vertiacal collision with enemy
-function PlayerVertialCollisionEnemy() {
+// Vertical collision with enemy
+function PlayerVerticalCollisionEnemy() {
 	if (place_meeting(x,y+vsp,oEnemy))
 	{
 		vsp = -jumpsp/2;
 	}	
 }
 
-function DeadPlayerVertialCollisionEnemy() {
-	if (place_meeting(x,y-vsp,oEnemy))
+function DeadPlayerHorizontalCollisionEnemy(){
+	if (place_meeting(x+hsp,y,oUnderworldEnemy))
+	{
+		while (!place_meeting(x+sign(hsp),y,oUnderworldEnemy))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+}
+
+function DeadPlayerVerticalCollisionEnemy() {
+	if (place_meeting(x,y-vsp,oUnderworldEnemy))
 	{
 		vsp = -jumpsp/2;
 	}

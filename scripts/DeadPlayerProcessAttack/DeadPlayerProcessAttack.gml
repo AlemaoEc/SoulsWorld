@@ -10,7 +10,7 @@ function DeadPlayerProcessAttack(argument0, argument1) {
 	// Use attack hitbox and check for hits
 	mask_index = argument1;
 	var hitByAttackNow = ds_list_create();
-	var hits = instance_place_list(x,y,oEnemy,hitByAttackNow, false);
+	var hits = instance_place_list(x,y,oUnderworldEnemy,hitByAttackNow, false);
 	if (hits > 0)
 	{
 		for(var i = 0; i < hits; i++)
@@ -22,7 +22,7 @@ function DeadPlayerProcessAttack(argument0, argument1) {
 				ds_list_add(hitByAttack, hitID);
 				with (hitID)
 				{
-					EnemyHit(2);
+					UnderworldEnemyHit(2);
 				}
 			}
 		}

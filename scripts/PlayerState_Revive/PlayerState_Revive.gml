@@ -19,6 +19,10 @@ function PlayerState_Revive(){
 	sprite_index = sPlayerRevive;
 	image_speed = 1;
 
-	if (AnimationEnd()) image_speed = 0;
-	state = PLAYERSTATE.FREE;
+	if (AnimationEnd()) {
+		//avoinding player to enter the floor
+		y -= 50;
+		isResurrecting = false;
+		state = PLAYERSTATE.JUMP;
+	}
 }

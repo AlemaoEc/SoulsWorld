@@ -7,7 +7,7 @@ vsp = 0;
 grv = 0.5;
 walksp = 8;
 jumpsp = 15;
-hp = 2;
+hp = 1;
 jumps = 0;
 
 image_yscale = -1;

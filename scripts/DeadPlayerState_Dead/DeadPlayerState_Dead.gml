@@ -2,7 +2,7 @@ function DeadPlayerState_Dead() {
 	grv = 0.5;
 	vsp += grv;
 	
-	PlayerVerticalCollisionWall()
+	DeadPlayerVerticalCollisionWall()
 	y -= vsp;
 
 	mask_index = sDeadPlayerDead;
@@ -16,11 +16,4 @@ function DeadPlayerState_Dead() {
 
 	closeKey = keyboard_check(vk_escape);
 	if (closeKey) game_end();
-	
-	if (!global.alivePlayer && !isResurrecting) {
-		isResurrecting = true;
-		alarm[0] = room_speed * 2;
-		x = global.lastAliveXPosition;
-		y = (global.aliveWorldY - global.lastAliveYPosition) + global.underWorldY + 32;
-	}
 }
