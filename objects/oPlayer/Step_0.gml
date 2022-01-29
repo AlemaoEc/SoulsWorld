@@ -29,4 +29,7 @@ switch (state)
 	case PLAYERSTATE.DEAD:
 		PlayerState_Dead();
 		break;
+	case PLAYERSTATE.REVIVE:
+		PlayerState_Revive();
+		break;
 }

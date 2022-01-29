@@ -1,4 +1,6 @@
 function PlayerState_Free() {
+	show_debug_message("Y player");
+	show_debug_message(y);
 	// Calculate movement
 	var _move = key_right - key_left;
 	hsp = _move * walksp;

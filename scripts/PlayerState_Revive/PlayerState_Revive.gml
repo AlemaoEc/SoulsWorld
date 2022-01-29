@@ -1,4 +1,6 @@
-function PlayerState_Dead() {
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function PlayerState_Revive(){
 	grv = 0.5;
 	vsp += grv;
 	
@@ -13,15 +15,10 @@ function PlayerState_Dead() {
 	}
 	y += vsp;
 
-	mask_index = sPlayerDead;
-	sprite_index = sPlayerDead;
+	mask_index = sPlayerRevive;
+	sprite_index = sPlayerRevive;
 	image_speed = 1;
 
 	if (AnimationEnd()) image_speed = 0;
-
-	restartKey = keyboard_check(ord("R"));
-	if (restartKey) state = PLAYERSTATE.REVIVE;
-
-	closeKey = keyboard_check(vk_escape);
-	if (closeKey) game_end();
+	state = PLAYERSTATE.FREE;
 }

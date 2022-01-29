@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sPlayerAir","path":"sprites/sPlayerAir/sPlayerAir.yy",},"order":1,},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},"order":3,},
+    {"id":{"name":"PlayerState_Revive","path":"scripts/PlayerState_Revive/PlayerState_Revive.yy",},"order":17,},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":5,},
     {"id":{"name":"sAttackSlash","path":"sprites/sAttackSlash/sAttackSlash.yy",},"order":7,},
     {"id":{"name":"sAttackSlashHB","path":"sprites/sAttackSlashHB/sAttackSlashHB.yy",},"order":9,},
@@ -50,6 +51,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":3,},
     {"id":{"name":"PlayerColisions","path":"scripts/PlayerColisions/PlayerColisions.yy",},"order":15,},
+    {"id":{"name":"sPlayerRevive","path":"sprites/sPlayerRevive/sPlayerRevive.yy",},"order":20,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":5,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":7,},
     {"id":{"name":"room0","path":"rooms/room0/room0.yy",},"order":1,},

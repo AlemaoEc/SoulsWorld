@@ -21,7 +21,8 @@ enum PLAYERSTATE
 	ATTACK_SLASH,
 	ATTACK_COMBO,
 	AIR_ATTACK,
-	DEAD
+	DEAD,
+	REVIVE
 }
 
 alreadyAirAttacked = false;
