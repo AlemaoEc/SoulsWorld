@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(global.leverIntereation and
    (distance_to_object(oPlayer) < 384 or
-   distance_to_object(oDeadPlayer)  384)
+   distance_to_object(oDeadPlayer) < 384)
 ) {
 	isClosed = false;
 	global.leverIntereation = false;
