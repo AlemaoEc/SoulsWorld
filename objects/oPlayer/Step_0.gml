@@ -15,7 +15,7 @@ switch (state)
 		PlayerState_Jump();
 		break;
 	case PLAYERSTATE.DOUBLE_JUMP: 
-		PlayerState_Free();
+		PlayerState_DoubleJump();
 		break;
 	case PLAYERSTATE.ATTACK_SLASH:
 		PlayerState_Attack_Slash();

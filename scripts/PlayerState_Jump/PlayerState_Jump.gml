@@ -3,20 +3,16 @@
 function PlayerState_Jump(){
 	//Jump
 	vsp += grv;
-	show_debug_message(grv);
 	if(place_meeting(x,y+1,oWall))
 	{
 		vsp = -jumpsp;
-		state = PLAYERSTATE.FREE;
 	}
 	
 	PlayerVerticalCollisionWall();
 	PlayerVertialCollisionEnemy();
 	y += vsp;
 	
+	if(place_meeting(x,y+1,oWall)) state = PLAYERSTATE.FREE;
+	
 	PlayerState_Free()
-	if(place_meeting(x,y,oWall))
-	{
-		state = PLAYERSTATE.FREE;
-	}
 }

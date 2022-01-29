@@ -24,6 +24,7 @@
     {"id":{"name":"PlayerState_Jump","path":"scripts/PlayerState_Jump/PlayerState_Jump.yy",},"order":14,},
     {"id":{"name":"sEnemyNormalSecAttackHB","path":"sprites/sEnemyNormalSecAttackHB/sEnemyNormalSecAttackHB.yy",},"order":13,},
     {"id":{"name":"sEnemyNormalThrAttack","path":"sprites/sEnemyNormalThrAttack/sEnemyNormalThrAttack.yy",},"order":15,},
+    {"id":{"name":"PlayerState_DoubleJump","path":"scripts/PlayerState_DoubleJump/PlayerState_DoubleJump.yy",},"order":16,},
     {"id":{"name":"sEnemyNormalThrAttackHB","path":"sprites/sEnemyNormalThrAttackHB/sEnemyNormalThrAttackHB.yy",},"order":17,},
     {"id":{"name":"sEnemyPiercingAttack","path":"sprites/sEnemyPiercingAttack/sEnemyPiercingAttack.yy",},"order":19,},
     {"id":{"name":"sEnemyPiercingAttackHB","path":"sprites/sEnemyPiercingAttackHB/sEnemyPiercingAttackHB.yy",},"order":21,},
