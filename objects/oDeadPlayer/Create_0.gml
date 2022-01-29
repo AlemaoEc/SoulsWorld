@@ -10,7 +10,7 @@ hp = 2;
 image_yscale = -1;
 
 // Adding state machine
-state = DEADPLAYERSTATE.JUMP;
+state = DEADPLAYERSTATE.AIR_ATTACK;
 hitByAttack = ds_list_create();
 
 enum DEADPLAYERSTATE

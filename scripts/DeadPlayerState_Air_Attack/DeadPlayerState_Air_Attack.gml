@@ -18,6 +18,6 @@ function DeadPlayerState_Air_Attack() {
 	if (AnimationEnd())
 	{
 		alreadyAirAttacked = true;
-		state = DEADPLAYERSTATE.FREE;
+		state = DEADPLAYERSTATE.JUMP;
 	}
 }
