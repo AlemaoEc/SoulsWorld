@@ -11,9 +11,13 @@ function DeadPlayerState_Dead() {
 
 	if (AnimationEnd()) image_speed = 0;
 
-	//restartKey = keyboard_check(ord("R"));
-	//if (restartKey) room_restart();
+	restartKey = keyboard_check(ord("R"));
+	if (restartKey) room_restart();
 
 	closeKey = keyboard_check(vk_escape);
 	if (closeKey) game_end();
+	
+	if (!global.alivePlayer) {
+		state = DEADPLAYERSTATE.REVIVE;
+	}
 }

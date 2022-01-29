@@ -31,4 +31,7 @@ switch (state)
 	case DEADPLAYERSTATE.DEAD:
 		DeadPlayerState_Dead();
 		break;
+	case DEADPLAYERSTATE.REVIVE:
+		DeadPlayerState_Revive();
+		break;
 }
