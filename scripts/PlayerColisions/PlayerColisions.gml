@@ -26,13 +26,10 @@ function PlayerVerticalCollisionWall(){
 }
 
 function DeadPlayerVerticalCollisionWall() {
-	show_debug_message("DeadPlayerVerticalCollisionWall");
 	if (place_meeting(x,y-vsp,oWall))
 	{
-		show_debug_message("place_meeting(x,y-vsp,oWall)");
 		while (!place_meeting(x,y-sign(vsp),oWall))
 		{
-			show_debug_message("alterando Y");
 			y -= sign(vsp);
 		}
 		vsp = 0;

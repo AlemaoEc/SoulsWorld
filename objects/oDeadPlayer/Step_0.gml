@@ -3,11 +3,9 @@
 // Get player inputs
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D")); ;
-key_jump = keyboard_check_pressed(vk_space);
+key_jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 keyAttack = keyboard_check_pressed(ord("H")) || keyboard_check_pressed(ord("Z")); 
 
-show_debug_message("direita apertado");
-show_debug_message(key_right);
 switch (state)
 {
 	case DEADPLAYERSTATE.FREE: 
@@ -15,9 +13,6 @@ switch (state)
 		break;
 	case DEADPLAYERSTATE.JUMP:
 		DeadPlayerState_Jump();
-		break;
-	case DEADPLAYERSTATE.DOUBLE_JUMP:
-		DeadPlayerState_DoubleJump();
 		break;
 	case DEADPLAYERSTATE.ATTACK_SLASH:
 		DeadPlayerState_Attack_Slash();
