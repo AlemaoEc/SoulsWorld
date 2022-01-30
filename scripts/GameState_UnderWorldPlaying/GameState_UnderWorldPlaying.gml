@@ -21,6 +21,7 @@ function GameState_UnderWorldPlaying(){
 	
 	if (global.currentUnderworldEnemy != 0) {
 		if (oUnderworldEnemy.state == UNDERWORLDENEMYSTATE.DEAD) {
+			oUnderworldEnemy.state = UNDERWORLDENEMYSTATE.WALKING;
 			global.lastDeadXPosition = oDeadPlayer.x;
 			global.lastDeadYPosition = oDeadPlayer.y;
 			oPlayer.isResurrecting = true;

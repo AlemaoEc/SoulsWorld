@@ -43,14 +43,32 @@ function UnderworldEnemyState_Walking() {
 
 	if (hsp != 0) image_xscale = sign(hsp);
 
-	// make the dash attack if the player is closer than 400
-	if (distance_to_object(oDeadPlayer) < 400 && canDashAttack && oDeadPlayer.state != DEADPLAYERSTATE.DEAD) 
-		state = UNDERWORLDENEMYSTATE.DASHING;
+	if(oDeadPlayer.state != DEADPLAYERSTATE.DEAD) {
+		// make the dash attack if the player is closer than 400
+		if (distance_to_object(oDeadPlayer) < 400 and canDashAttack) 
+			state = UNDERWORLDENEMYSTATE.DASHING;
+			
+		// make the primary attack if the player is closer than 200
+		if (distance_to_object(oDeadPlayer) < 200)
+			state = UNDERWORLDENEMYSTATE.PRIMARYATTACK;
+			
+		if (distance_to_object(oDeadPlayer) >= 1024) {
+			_newPositionX = oDeadPlayer.x+100;
+			_newPositionY= oDeadPlayer.y;
 
-	// make the primary attack if the player is closer than 200
-	if (distance_to_object(oDeadPlayer) < 200 && oDeadPlayer.state != DEADPLAYERSTATE.DEAD)
-		state = UNDERWORLDENEMYSTATE.PRIMARYATTACK;
-	
-	// make nothing if the player is dead
-	if (oDeadPlayer.state = DEADPLAYERSTATE.DEAD) state = UNDERWORLDENEMYSTATE.IDLE;
+			//spawn the enemy
+			while(position_meeting(_newPositionX,_newPositionY, oPortal) or
+				  position_meeting(_newPositionX,_newPositionY, oWall) or
+				  position_meeting(_newPositionX,_newPositionY, oFloorDamage) or
+			      position_meeting(_newPositionX,_newPositionY, oDeadPlayer)
+			) {
+				randomize();
+				_newPositionX = oDeadPlayer.x + random_range(-384,384);
+			} 
+			x = _newPositionX;
+			y = _newPositionY;
+		}	
+	} else {
+		state = UNDERWORLDENEMYSTATE.IDLE;
+	}
 }
