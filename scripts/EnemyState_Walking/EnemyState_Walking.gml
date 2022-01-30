@@ -20,6 +20,17 @@ function EnemyState_Walking() {
 		hsp = 0;
 		walkdirection *= -1;
 	}
+	
+	if (place_meeting(x+hsp,y,oPlayer))
+	{
+		while (!place_meeting(x+sign(hsp),y,oPlayer))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+		walkdirection *= -1;
+	}
+	
 	x += hsp;
 
 	// Vertical collision with wall
@@ -34,21 +45,15 @@ function EnemyState_Walking() {
 	y += vsp;
 
 	// Animation
-	image_speed = 2;
+	image_speed = 1;
 	sprite_index = (hsp == 0)? sEnemyIdle : sEnemyRun;
 
-	if (hsp != 0) image_xscale = sign(hsp);
+	if (hsp != 0) image_xscale = -(sign(hsp));
 
-	// make the dash attack if the player is closer than 400
-	if (distance_to_object(oPlayer) < 400 && canDashAttack && oPlayer.state != PLAYERSTATE.DEAD) 
+	// make the dash attack if the player is closer than 300
+	if (distance_to_object(oPlayer) < 300 && canDashAttack && oPlayer.state != PLAYERSTATE.DEAD) 
 		state = ENEMYSTATE.DASHING;
 
-	// make the primary attack if the player is closer than 200
-	if (distance_to_object(oPlayer) < 200 && oPlayer.state != PLAYERSTATE.DEAD)
-		state = ENEMYSTATE.PRIMARYATTACK;
-	
 	// make nothing if the player is dead
 	if (oPlayer.state = PLAYERSTATE.DEAD) state = ENEMYSTATE.IDLE;
-
-
 }

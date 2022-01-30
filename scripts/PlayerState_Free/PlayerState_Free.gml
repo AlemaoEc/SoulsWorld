@@ -6,6 +6,7 @@ function PlayerState_Free() {
 	PlayerHorizontalCollisionPortal();
 	PlayerHorizontalCollisionWall();
 	PlayerHorizontalCollisionEnemy();
+	PlayerHorizontalCollisionBossEnemy();
 	x += hsp;
 	
 	// Animation

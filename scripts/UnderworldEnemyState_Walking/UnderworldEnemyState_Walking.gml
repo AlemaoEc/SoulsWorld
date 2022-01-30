@@ -24,6 +24,17 @@ function UnderworldEnemyState_Walking() {
 		hsp = 0;
 		walkdirection *= -1;
 	}
+	
+	if (place_meeting(x+hsp,y,oDeadPlayer))
+	{
+		while (!place_meeting(x+sign(hsp),y,oDeadPlayer))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+		walkdirection *= -1;
+	}
+	
 	x += hsp;
 
 	// Vertical collision with wall
@@ -38,18 +49,14 @@ function UnderworldEnemyState_Walking() {
 	y -= vsp;
 
 	// Animation
-	image_speed = 2;
+	image_speed = 1;
 	sprite_index = (hsp == 0)? sUnderworldEnemyIdle : sUnderworldEnemyRun;
 
-	if (hsp != 0) image_xscale = sign(hsp);
+	if (hsp != 0) image_xscale = -(sign(hsp));
 
-	// make the dash attack if the player is closer than 400
-	if (distance_to_object(oDeadPlayer) < 400 && canDashAttack && oDeadPlayer.state != DEADPLAYERSTATE.DEAD) 
+	// make the dash attack if the player is closer than 300
+	if (distance_to_object(oDeadPlayer) < 300 && canDashAttack && oDeadPlayer.state != DEADPLAYERSTATE.DEAD) 
 		state = UNDERWORLDENEMYSTATE.DASHING;
-
-	// make the primary attack if the player is closer than 200
-	if (distance_to_object(oDeadPlayer) < 200 && oDeadPlayer.state != DEADPLAYERSTATE.DEAD)
-		state = UNDERWORLDENEMYSTATE.PRIMARYATTACK;
 	
 	// make nothing if the player is dead
 	if (oDeadPlayer.state = DEADPLAYERSTATE.DEAD) state = UNDERWORLDENEMYSTATE.IDLE;

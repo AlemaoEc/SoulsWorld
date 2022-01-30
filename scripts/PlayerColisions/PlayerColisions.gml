@@ -130,6 +130,26 @@ function PlayerVerticalCollisionEnemy() {
 	}	
 }
 
+// Horizontal collision with enemy
+function PlayerHorizontalCollisionBossEnemy(){
+	if (place_meeting(x+hsp,y,oBossEnemy) && oBossEnemy.state != BOSSENEMYSTATE.DEAD)
+	{
+		while (!place_meeting(x+sign(hsp),y,oBossEnemy))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+}
+
+// Vertical collision with enemy
+function PlayerVerticalCollisionBossEnemy() {
+	if (place_meeting(x,y+vsp,oBossEnemy))
+	{
+		vsp = -jumpsp/2;
+	}	
+}
+
 function DeadPlayerHorizontalCollisionEnemy(){
 	if (place_meeting(x+hsp,y,oUnderworldEnemy))
 	{
