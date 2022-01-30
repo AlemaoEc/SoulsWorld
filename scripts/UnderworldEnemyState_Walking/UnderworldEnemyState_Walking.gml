@@ -3,6 +3,10 @@ function UnderworldEnemyState_Walking() {
 
 	vsp += grv;
 
+	while (!place_meeting(x,y-1, oWall)) {
+		y -= 1;
+	}
+
 	// Calculate direction of the player
 	if (oDeadPlayer.x < oUnderworldEnemy.x) walkdirection = -1;
 	else if (oDeadPlayer.x > oUnderworldEnemy.x) walkdirection = 1;

@@ -14,6 +14,7 @@ function DeadPlayerState_Free() {
 		sprite_index = sDeadPlayerAir;
 		image_speed = 0;
 		image_index = (vsp > 0)? 1 : 0;
+		state = DEADPLAYERSTATE.JUMP;
 	}
 	else
 	{

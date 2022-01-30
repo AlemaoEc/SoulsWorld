@@ -8,11 +8,12 @@ walksp = 5;
 walkdirection = -1;
 
 image_yscale = -1;
+image_alpha = 0;
 
 hitByEnemyAttack = ds_list_create();
 canDashAttack = true;
 
-state = UNDERWORLDENEMYSTATE.WALKING;
+state = UNDERWORLDENEMYSTATE.IDLE;
 enum UNDERWORLDENEMYSTATE
 {
 	WALKING,
@@ -23,3 +24,5 @@ enum UNDERWORLDENEMYSTATE
 	DEAD,
 	IDLE
 }
+
+alarm [2] = room_speed*3;

@@ -4,7 +4,7 @@ function GameState_UnderWorldPlaying(){
 	if (spawnUnderWorld == true && (oDeadPlayer.state != DEADPLAYERSTATE.DEAD)) {
 		spawnUnderWorld = false;
 		//spawn the enemy
-		global.currentUnderworldEnemy = instance_create_layer(1248, 1600, "Instances", oUnderworldEnemy);
+		global.currentUnderworldEnemy = instance_create_layer(oDeadPlayer.x+100, oDeadPlayer.y, "Instances", oUnderworldEnemy);
 	}
 	
 	if (global.currentUnderworldEnemy != 0) {
