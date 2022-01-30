@@ -1,5 +1,10 @@
 /// @description Core enemy logic
 grv = 0.5;
+
+image_alpha = lerp(image_alpha,1,0.005);
+
+show_debug_message(hsp);
+
 switch (state)
 {
 	case UNDERWORLDENEMYSTATE.WALKING: 

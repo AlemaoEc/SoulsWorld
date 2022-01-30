@@ -112,7 +112,7 @@ function DeadPlayerVerticalCollisionFloorDamage(){
 
 // Horizontal collision with enemy
 function PlayerHorizontalCollisionEnemy(){
-	if (place_meeting(x+hsp,y,oEnemy))
+	if (place_meeting(x+hsp,y,oEnemy) && oEnemy.state != ENEMYSTATE.DEAD)
 	{
 		while (!place_meeting(x+sign(hsp),y,oEnemy))
 		{

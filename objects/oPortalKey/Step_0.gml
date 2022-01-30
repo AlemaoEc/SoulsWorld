@@ -3,4 +3,5 @@
 if (place_meeting(x,y,oPlayer) or
 	place_meeting(x,y,oDeadPlayer)) {
 	global.leverIntereation = true;
+	image_index = 1;
 }

@@ -11,6 +11,7 @@ function PlayerState_Air_Attack() {
 	x += hsp;
 
 	vsp += grv*2;
+	
 	PlayerVerticalCollisionWall();
 	PlayerVerticalCollisionEnemy();
 	PlayerVerticalCollisionPortal();
