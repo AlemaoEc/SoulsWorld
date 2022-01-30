@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"Sprite55","path":"sprites/Sprite55/Sprite55.yy",},"order":25,},
     {"id":{"name":"sPlayerAir","path":"sprites/sPlayerAir/sPlayerAir.yy",},"order":1,},
     {"id":{"name":"sUnderworldEnemyDead","path":"sprites/sUnderworldEnemyDead/sUnderworldEnemyDead.yy",},"order":0,},
     {"id":{"name":"sUnderworldEnemyNormalSecAttack","path":"sprites/sUnderworldEnemyNormalSecAttack/sUnderworldEnemyNormalSecAttack.yy",},"order":4,},
