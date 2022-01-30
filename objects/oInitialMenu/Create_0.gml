@@ -3,3 +3,5 @@
 if(!audio_is_playing(sIntro)) {
 	audio_play_sound(sIntro, 0, true);	
 }
+
+window_set_fullscreen(true);

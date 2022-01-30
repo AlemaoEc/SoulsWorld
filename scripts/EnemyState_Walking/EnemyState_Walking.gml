@@ -55,5 +55,5 @@ function EnemyState_Walking() {
 		state = ENEMYSTATE.DASHING;
 
 	// make nothing if the player is dead
-	if (oPlayer.state = PLAYERSTATE.DEAD) state = ENEMYSTATE.IDLE;
+	//if (oPlayer.state = PLAYERSTATE.DEAD) state = ENEMYSTATE.IDLE;
 }
