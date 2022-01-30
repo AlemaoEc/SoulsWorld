@@ -18,9 +18,8 @@ function PlayerState_Free() {
 	}
 	else
 	{
-		image_speed = 2;
+		image_speed = 1;
 		sprite_index = (hsp == 0)? sPlayerIdle : sPlayerRun;
-		alreadyAirAttacked = false;
 	}
 
 	if (hsp != 0) image_xscale = sign(hsp);
@@ -30,7 +29,6 @@ function PlayerState_Free() {
 	}
 
 	if (key_attack && sprite_index != sPlayerAir) state = PLAYERSTATE.ATTACK_SLASH;
-	if (key_attack && sprite_index == sPlayerAir && !alreadyAirAttacked) state = PLAYERSTATE.AIR_ATTACK;
 	if (key_jump){
 		state = PLAYERSTATE.JUMP;
 	} 

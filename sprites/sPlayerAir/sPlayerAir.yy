@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 4,
@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 35,
-  "bbox_right": 92,
-  "bbox_top": 1,
+  "bbox_left": 49,
+  "bbox_right": 85,
+  "bbox_top": 12,
   "bbox_bottom": 127,
   "HTile": false,
   "VTile": false,
@@ -24,9 +24,6 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f3862a79-9890-439d-9a02-c2b77d385a7c","path":"sprites/sPlayerAir/sPlayerAir.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f3862a79-9890-439d-9a02-c2b77d385a7c","path":"sprites/sPlayerAir/sPlayerAir.yy",},"LayerId":{"name":"58b3b611-d6ca-4663-949f-8cdccb73aa66","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sPlayerAir","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","name":"f3862a79-9890-439d-9a02-c2b77d385a7c","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"4f90b10d-c5e6-4d34-9754-07f7a17cdd21","path":"sprites/sPlayerAir/sPlayerAir.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"4f90b10d-c5e6-4d34-9754-07f7a17cdd21","path":"sprites/sPlayerAir/sPlayerAir.yy",},"LayerId":{"name":"58b3b611-d6ca-4663-949f-8cdccb73aa66","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sPlayerAir","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","name":"4f90b10d-c5e6-4d34-9754-07f7a17cdd21","tags":[],"resourceType":"GMSpriteFrame",},
@@ -42,14 +39,13 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a1bcb674-35ae-473f-beec-c0fd2690586d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f3862a79-9890-439d-9a02-c2b77d385a7c","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"bdf5d669-0632-40e3-84ea-08915c665c3a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4f90b10d-c5e6-4d34-9754-07f7a17cdd21","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"13e93da8-3836-4a8d-8057-6c98543d7de7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ef07b2ca-b629-4e0c-8223-e03579c7da83","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bdf5d669-0632-40e3-84ea-08915c665c3a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4f90b10d-c5e6-4d34-9754-07f7a17cdd21","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"13e93da8-3836-4a8d-8057-6c98543d7de7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ef07b2ca-b629-4e0c-8223-e03579c7da83","path":"sprites/sPlayerAir/sPlayerAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

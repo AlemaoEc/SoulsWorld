@@ -17,12 +17,6 @@ switch (state)
 	case DEADPLAYERSTATE.ATTACK_SLASH:
 		DeadPlayerState_Attack_Slash();
 		break;
-	case DEADPLAYERSTATE.ATTACK_COMBO:
-		DeadPlayerState_Attack_Combo();
-		break;
-	case DEADPLAYERSTATE.AIR_ATTACK:
-		DeadPlayerState_Air_Attack();
-		break;
 	case DEADPLAYERSTATE.DEAD:
 		DeadPlayerState_Dead();
 		break;

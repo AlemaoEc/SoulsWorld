@@ -18,9 +18,8 @@ function DeadPlayerState_Free() {
 	}
 	else
 	{
-		image_speed = 2;
+		image_speed = 1;
 		sprite_index = (hsp == 0)? sDeadPlayerIdle : sDeadPlayerRun;
-		alreadyAirAttacked = false;
 		alreadyDoubleJumped = false;
 		jumps = MAX_JUMPS;
 	}
@@ -32,7 +31,6 @@ function DeadPlayerState_Free() {
 	}
 
 	if (keyAttack and sprite_index != sDeadPlayerAir) state = DEADPLAYERSTATE.ATTACK_SLASH;
-	if (keyAttack and sprite_index == sDeadPlayerAir && !alreadyAirAttacked) state = DEADPLAYERSTATE.AIR_ATTACK;
 	if (key_jump){
 		state = DEADPLAYERSTATE.JUMP;
 	}

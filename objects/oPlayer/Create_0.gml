@@ -19,11 +19,8 @@ enum PLAYERSTATE
 	FREE,
 	JUMP,
 	ATTACK_SLASH,
-	ATTACK_COMBO,
-	AIR_ATTACK,
 	DEAD,
 	REVIVE
 }
 
-alreadyAirAttacked = false;
 isResurrecting = false;
