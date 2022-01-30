@@ -24,12 +24,6 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"659f60e0-cf91-401a-827d-6005ab61e029","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"659f60e0-cf91-401a-827d-6005ab61e029","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"LayerId":{"name":"18e9494f-2f35-490c-8f9e-f4f8deb44e6b","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDeadPlayerIdle","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","name":"659f60e0-cf91-401a-827d-6005ab61e029","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5c7f7e10-cc56-44cc-a842-257fb7943b7c","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5c7f7e10-cc56-44cc-a842-257fb7943b7c","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"LayerId":{"name":"18e9494f-2f35-490c-8f9e-f4f8deb44e6b","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDeadPlayerIdle","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","name":"5c7f7e10-cc56-44cc-a842-257fb7943b7c","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"a8b9baec-b7a9-416d-b7d5-5a427501333f","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"a8b9baec-b7a9-416d-b7d5-5a427501333f","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"LayerId":{"name":"18e9494f-2f35-490c-8f9e-f4f8deb44e6b","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sDeadPlayerIdle","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","name":"a8b9baec-b7a9-416d-b7d5-5a427501333f","tags":[],"resourceType":"GMSpriteFrame",},
@@ -42,14 +36,12 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 1.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d3187846-a74f-471e-bdb3-0ebb1deec1b5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"659f60e0-cf91-401a-827d-6005ab61e029","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"ebae5be1-cd31-4b2d-bc22-2557e36e4791","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5c7f7e10-cc56-44cc-a842-257fb7943b7c","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"a6d3a37a-3810-4637-96a8-244578d86a84","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8b9baec-b7a9-416d-b7d5-5a427501333f","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a6d3a37a-3810-4637-96a8-244578d86a84","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8b9baec-b7a9-416d-b7d5-5a427501333f","path":"sprites/sDeadPlayerIdle/sDeadPlayerIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

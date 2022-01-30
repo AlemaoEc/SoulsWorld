@@ -11,7 +11,7 @@ hp = 2;
 hasKey = false;
 
 // Adding state machine
-state = PLAYERSTATE.JUMP;
+state = PLAYERSTATE.DEAD;
 hitByAttack = ds_list_create();
 
 enum PLAYERSTATE
