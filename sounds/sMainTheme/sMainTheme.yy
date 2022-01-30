@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "MainTheme.mp3",
+  "soundFile": "sMainTheme.mp3",
   "duration": 28.2293339,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "MainTheme",
+  "name": "sMainTheme",
   "tags": [],
   "resourceType": "GMSound",
 }

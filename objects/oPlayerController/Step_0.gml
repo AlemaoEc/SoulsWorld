@@ -8,3 +8,11 @@ switch (state) {
 		GameState_UnderWorldPlaying();
 		break;
 }
+if(global.isBossFight) {
+	if(audio_is_playing(sMainTheme)) {
+		audio_stop_all();
+	}
+	if(!audio_is_playing(sBossFight)) {
+		audio_play_sound(sBossFight, 0, true);	
+	}
+}
