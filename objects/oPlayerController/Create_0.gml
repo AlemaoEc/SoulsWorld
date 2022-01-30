@@ -27,6 +27,7 @@ enum GAMESTATE
 spawnUnderWorld = false;
 
 if(!audio_is_playing(sMainTheme)) {
+	audio_stop_all();
 	audio_play_sound(sMainTheme, 0, true);	
 }
 
