@@ -22,4 +22,11 @@ enemyPosition2 = {
 };
 
 
-enemyPositions = [enemyPosition0, enemyPosition1, enemyPosition2];
+enemyPosition3 = {
+	x: 1444,
+	y: 734,
+	spawned: false,
+	instance: 3
+};
+
+enemyPositions = [enemyPosition0, enemyPosition1, enemyPosition2, enemyPosition3];

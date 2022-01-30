@@ -46,7 +46,7 @@ function DeadPlayerVerticalCollisionPortal(){
 }
 
 // Horizontal collision
-function PlayerHorizontalCollisionWall(){	
+function PlayerHorizontalCollisionWall(){
 	if (place_meeting(x+hsp,y,oWall))
 	{
 		while (!place_meeting(x+sign(hsp),y,oWall))
