@@ -2,8 +2,8 @@
 // You can write your code in this editor
 global.alivePlayer = true;
 
-global.aliveWorldY = 576;
-global.underWorldY = 1600;
+global.aliveWorldY = 8000;
+global.underWorldY = 9536;
 
 global.lastAliveXPosition = 0;
 global.lastAliveYPosition = 0
