@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "BossFight",
-  "duration": 0.0,
+  "soundFile": "sBossFight.mp3",
+  "duration": 46.3493347,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "BossFight",
+  "name": "sBossFight",
   "tags": [],
   "resourceType": "GMSound",
 }

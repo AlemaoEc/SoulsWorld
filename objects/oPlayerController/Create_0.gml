@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+global.isBossFight = false;
 global.alivePlayer = true;
 
 global.aliveWorldY = 8000;
@@ -23,3 +25,9 @@ enum GAMESTATE
 }
 
 spawnUnderWorld = false;
+
+if(!audio_is_playing(sMainTheme)) {
+	audio_play_sound(sMainTheme, 0, true);	
+}
+
+

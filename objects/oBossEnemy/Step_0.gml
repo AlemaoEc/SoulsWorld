@@ -1,6 +1,5 @@
 /// @description Core enemy logic
 grv = 0.5;
-show_debug_message(hp)
 switch (state)
 {
 	case BOSSENEMYSTATE.WALKING: 
@@ -18,4 +17,8 @@ switch (state)
 	case BOSSENEMYSTATE.IDLE:
 		BossEnemyState_Idle();
 		break;
+}
+
+if(distance_to_object(oPlayer) < 1024) {
+	global.isBossFight = true;	
 }
