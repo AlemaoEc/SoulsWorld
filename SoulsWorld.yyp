@@ -14,6 +14,7 @@
     {"id":{"name":"sPortalKey","path":"sprites/sPortalKey/sPortalKey.yy",},"order":12,},
     {"id":{"name":"sPortal","path":"sprites/sPortal/sPortal.yy",},"order":11,},
     {"id":{"name":"sDeadPlayerRevive","path":"sprites/sDeadPlayerRevive/sDeadPlayerRevive.yy",},"order":11,},
+    {"id":{"name":"sDoor","path":"sprites/sDoor/sDoor.yy",},"order":18,},
     {"id":{"name":"GameState_AliveWorldPlaying","path":"scripts/GameState_AliveWorldPlaying/GameState_AliveWorldPlaying.yy",},"order":0,},
     {"id":{"name":"PlayerColisions","path":"scripts/PlayerColisions/PlayerColisions.yy",},"order":4,},
     {"id":{"name":"sPlayerDead","path":"sprites/sPlayerDead/sPlayerDead.yy",},"order":9,},

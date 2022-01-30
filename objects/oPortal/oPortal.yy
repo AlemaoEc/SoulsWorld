@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPortal",
-    "path": "sprites/sPortal/sPortal.yy",
+    "name": "sDoor",
+    "path": "sprites/sDoor/sDoor.yy",
   },
   "solid": false,
   "visible": true,
