@@ -5,8 +5,9 @@ function DeadPlayerState_Jump(){
 	vsp += grv;
 	
 	//VSP > -10 is when player coming out of the ground
-	if(jumps > 0 or 
-	  (key_jump and jumps == 0 and vsp > -10)
+	if(
+	  (jumps > 0 and key_jump) or
+	  (key_jump and jumps >= 0 and vsp > -10)
 	) {
 		vsp = -jumpsp;
 		jumps -= 1;

@@ -5,6 +5,21 @@ enemyPosition0 = {
 	y: 6720,
 	spawned: false,
 	instance: 0
-}
+};
 
-enemyPositions = [enemyPosition0];
+enemyPosition1 = {
+	x: 2020,
+	y: 5332,
+	spawned: false,
+	instance: 1
+};
+
+enemyPosition2 = {
+	x: 2496,
+	y: 3936,
+	spawned: false,
+	instance: 2
+};
+
+
+enemyPositions = [enemyPosition0, enemyPosition1, enemyPosition2];

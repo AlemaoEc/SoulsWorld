@@ -13,7 +13,7 @@ function PlayerState_Free() {
 	{
 		sprite_index = sPlayerAir;
 		image_speed = 0;
-		image_index = (vsp > 0)? 1 : 0;
+		image_index = 1;
 		state = PLAYERSTATE.JUMP;
 	}
 	else
@@ -28,6 +28,7 @@ function PlayerState_Free() {
 		PlayerHit(1);
 	}
 
+	if (key_dead) state = PLAYERSTATE.DEAD;
 	if (key_attack && sprite_index != sPlayerAir) state = PLAYERSTATE.ATTACK_SLASH;
 	if (key_jump){
 		state = PLAYERSTATE.JUMP;
