@@ -40,6 +40,7 @@
     {"id":{"name":"sUnderworldEnemyNormalAttackHB","path":"sprites/sUnderworldEnemyNormalAttackHB/sUnderworldEnemyNormalAttackHB.yy",},"order":3,},
     {"id":{"name":"sEnemyNormalSecAttack","path":"sprites/sEnemyNormalSecAttack/sEnemyNormalSecAttack.yy",},"order":5,},
     {"id":{"name":"PlayerState_Jump","path":"scripts/PlayerState_Jump/PlayerState_Jump.yy",},"order":14,},
+    {"id":{"name":"oPortalDead","path":"objects/oPortalDead/oPortalDead.yy",},"order":13,},
     {"id":{"name":"sEnemyIdle","path":"sprites/sEnemyIdle/sEnemyIdle.yy",},"order":13,},
     {"id":{"name":"sEnemyNormalSecAttackHB","path":"sprites/sEnemyNormalSecAttackHB/sEnemyNormalSecAttackHB.yy",},"order":6,},
     {"id":{"name":"sUnderworldEnemyPiercingAttack","path":"sprites/sUnderworldEnemyPiercingAttack/sUnderworldEnemyPiercingAttack.yy",},"order":8,},

@@ -2,6 +2,7 @@
 // You can write your code in this editor
 MAX_JUMPS = 2;
 
+
 hsp = 0;
 vsp = 0;
 grv = 0.5;
